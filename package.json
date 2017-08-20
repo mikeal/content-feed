@@ -1,0 +1,38 @@
+{
+  "name": "content-feed",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "tap test/test-*.js --100",
+    "posttest": "standard",
+    "coverage": "tap test/test-*.js --coverage-report=lcov",
+    "postcoverage": "codecov",
+    "precommit": "npm test",
+    "prepush": "npm test",
+    "commitmsg": "validate-commit-msg"
+  },
+  "keywords": [],
+  "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.mikealrogers.com)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bytewise": "^1.1.0",
+    "multihasher": "^1.0.0",
+    "multihashes": "^0.4.5",
+    "random-access-file": "^1.8.1",
+    "touch": "^3.1.0",
+    "codecov": "^2.2.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "standard": "^10.0.2",
+    "tap": "^10.7.1",
+    "validate-commit-msg": "^2.14.0",
+    "semantic-release": "^6.3.6"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "mkdirp": "^0.5.1",
+    "tap": "^10.7.2"
+  }
+}
